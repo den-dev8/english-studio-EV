@@ -1,0 +1,326 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Comfortaa';
+   background-image: url(../img/bgc.jpg);
+}
+
+.container-fluid {
+    margin-bottom: 15em;
+}
+
+.txt {
+    opacity: 0.5;
+}
+
+
+
+            /* LOGO AND NAVIGATION */
+
+.main_part {
+    /* background: url(/assets/img/bgc\ opa.jpg); */
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    padding-top: 0em;
+}
+
+.top_menu>li {
+  display: inline-block;
+  list-style-type: none;
+  transition: .5s linear;
+}
+
+.topmenu>li:last-child {
+    margin-right: 0;
+}
+
+.sub_menu {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.sub_menu li {
+    list-style-type: none;
+}
+
+
+.nav_bar .sub_menu {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.nav_bar ul li:hover .sub_menu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.nav_bar ul a {
+  color: #212529;
+}
+
+.main_header {
+    display: flex;
+    margin-top: 1em;
+}
+
+.nav_bar {
+    justify-content: center;
+    display: inline;
+    font-size: 16px;
+}
+
+.nav_link {
+    color: #000;
+    padding-right: 5px;
+    border-right: 1px solid #000;
+    text-decoration: none;
+    position: relative;
+
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: rgb(199, 13, 13);
+    text-decoration: none;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: rgb(199, 13, 13);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+    transition: opacity .2s linear;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+
+
+            /* HEADER AND TEXT */
+
+.main_page {
+    text-align: center;
+}
+
+.main_header {
+    margin-top: 5em;
+}
+
+
+.main_head_txt {
+    font-size: 70px;
+    
+}
+
+
+            /* ABOUT US */
+
+.about_main {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.about_header {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.about_txt:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    margin-top: 3em;
+    
+    
+    background-color: #000;
+
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    z-index: 2;
+}
+
+.advantage_list {
+    text-align: center;
+}
+
+.advantage_list i {
+    font-size: 75px;
+    margin-bottom: 0.5em;
+}
+
+.advantage_list p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* TEACHER PAGE */
+
+.teacher_page h3 {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.first_teacher {
+    flex-direction: row;
+    text-align: center;
+}
+
+.teacher_photo img {
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.3);
+}
+
+.first_teacher {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+    /* GALLERY */
+
+.gallery {
+    text-align: center;
+}
+
+.gallery_header h4 {
+    padding-bottom: 50px;
+}
+
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px 10px;
+}
+
+
+ /* MAP/SOCIAL */
+
+.map {
+    text-align: center;
+}
+
+
+.contact_list h5 {
+    padding-bottom: 50px;
+}
+
+.map a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 36px;
+}
+
+.map a:hover {
+    text-decoration: underline;
+}
+
+
+
+h4 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.social a {
+    text-align: center;
+    width: 51px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+
+.instagram .vk {
+    
+    font-size: 15px;
+}
+
+.instagram a:hover {
+    background: #c4302b;
+    color: #fff;
+    transition: background 300ms ease-in-out;
+}
+
+.vk a:hover {
+    background: #3b5998;
+    color: #fff;
+    transition: background 300ms ease-in-out;
+}
+
+.contact_list .icon_info {
+    width: 320px;
+    height: 230px;
+    margin-right: 320px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.contact_list .icon_info p {
+    height: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.contact_list .icon_info img {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+
+.social_net p>i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+
+
+
+/* NAME STUDIO */
+
+
+.studio_name a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #212529;
+    text-align: center;
+    padding: 0 30px;
+
+    transition: .2s linear;
+}
+.studio_name a:hover {
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+
+
+
+ /* MEDIA QUARIES */
