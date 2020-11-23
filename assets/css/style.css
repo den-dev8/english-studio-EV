@@ -31,87 +31,59 @@ body {
     margin-right: 0;
 }
 
-.sub_menu {
-    position: absolute;
-    top: 20%;
-    left: 38%;
-    width: 100%;
-    z-index: 10;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+.nav-item {
+    color: rgb(36, 35, 35);
+    font-weight: 700;
 }
 
-.sub_menu li {
-    list-style-type: none;
-}
-
-
-.nav_bar .sub_menu {
-    -webkit-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-}
-.nav_bar ul li:hover .sub_menu {
-    -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    transform: scaleY(1);
-}
-.nav_bar ul a {
-  color: #212529;
-}
-
-.main_header {
-    display: flex;
-    margin-top: 1em;
-}
-
-.nav_bar {
-    justify-content: center;
-    display: inline;
-    font-size: 16px;
-}
-
-.nav_link {
+.nav-item:hover {
     color: #000;
-    padding-right: 5px;
-    border-right: 1px solid #000;
-    text-decoration: none;
-    position: relative;
-
-    transition: color .2s linear;
+    transition: color .2 ease-in-out;
 }
 
-.nav_link:hover {
-    color: rgb(199, 13, 13);
-    text-decoration: none;
+.studio_name a {
+    font-size: 30px;
 }
 
 
-.nav_link:after {
-    content: "";
+/* NAME STUDIO */
+
+
+.studio_name a {
     display: block;
-    width: 100%;
-    height: 2px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #212529;
+    text-align: center;
+    padding: 0 30px;
 
-    background-color: rgb(199, 13, 13);
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    z-index: 1;
-    transition: opacity .2s linear;
+    transition: .2s linear;
+}
+
+.studio_name a:hover {
+    font-size: 41px;
+    text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+    .studio_name a {
+        font-size: 30px;
+        display: block;
+    }
+    .studio_name a:hover {
+        font-size: 31px;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .studio_name a {
+        margin-top: 20px;
+    }
 }
 
 
 
-.nav_link:hover:after {
-    opacity: 1;
-}
 
 
 
@@ -325,25 +297,4 @@ h4 {
 
 
 
-
-/* NAME STUDIO */
-
-
-.studio_name a {
-    text-decoration: none;
-    font-size: 40px;
-    color: #212529;
-    text-align: center;
-    padding: 0 30px;
-
-    transition: .2s linear;
-}
-.studio_name a:hover {
-    font-size: 41px;
-    text-decoration: underline;
-}
-
-
-
-
- /* MEDIA QUARIES */
+ 
