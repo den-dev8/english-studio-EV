@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Comfortaa';
-   background-image: url(../img/bgc.jpg);
+    background-image: url(../img/bgc.jpg);
 }
 
 .container-fluid {
@@ -15,16 +15,16 @@ body {
 
 
 
-            /* LOGO AND NAVIGATION */
+/* LOGO AND NAVIGATION */
 
 .main_part {
     padding-top: 0em;
 }
 
 .top_menu>li {
-  display: inline-block;
-  list-style-type: none;
-  transition: .5s linear;
+    display: inline-block;
+    list-style-type: none;
+    transition: .5s linear;
 }
 
 .topmenu>li:last-child {
@@ -43,6 +43,18 @@ body {
 
 .studio_name a {
     font-size: 30px;
+}
+
+@media (max-width: 575.98px) {
+    .main_logo img {
+        height: 135px;
+        width: 160px;
+    }
+
+    .navbar-brand>img {
+        height: 135px;
+        width: 160px;
+    }
 }
 
 
@@ -70,9 +82,14 @@ body {
         font-size: 30px;
         display: block;
     }
+
     .studio_name a:hover {
         font-size: 31px;
         text-decoration: underline;
+    }
+
+    .main_header h1 {
+        font-size: 35px;
     }
 }
 
@@ -95,7 +112,8 @@ body {
         text-align: center;
     }
 }
-            /* HEADER AND TEXT */
+
+/* HEADER AND TEXT */
 
 .main_page {
     text-align: center;
@@ -108,17 +126,17 @@ body {
 
 .main_head_txt {
     font-size: 70px;
-    
+
 }
 
 @media (max-width: 575.98px) {
-    .main_head_txt{
+    .main_head_txt {
         font-size: 50px;
     }
 }
 
 
-            /* ABOUT US */
+/* ABOUT US */
 
 .about_main {
     text-align: center;
@@ -136,8 +154,8 @@ body {
     width: 50%;
     height: 2px;
     margin-top: 3em;
-    
-    
+
+
     background-color: #000;
 
     position: absolute;
@@ -173,7 +191,7 @@ body {
 }
 
 .teacher_photo img {
-    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .first_teacher {
@@ -182,7 +200,7 @@ body {
     margin-bottom: 40px;
 }
 
-    /* GALLERY */
+/* GALLERY */
 
 .gallery {
     text-align: center;
@@ -198,7 +216,7 @@ body {
     margin: 10px 10px;
 }
 
-@media (min-width: 992px)  {
+@media (min-width: 992px) {
     .gallery_photo img {
         width: 280px;
         height: 180px;
@@ -206,7 +224,7 @@ body {
 }
 
 
- /* MAP/SOCIAL */
+/* MAP/SOCIAL */
 
 .map {
     text-align: center;
@@ -249,7 +267,7 @@ h4 {
 }
 
 .instagram .vk {
-    
+
     font-size: 15px;
 }
 
@@ -293,8 +311,3 @@ h4 {
     font-size: 20px;
     padding-right: 10px;
 }
-
-
-
-
- 
