@@ -235,12 +235,28 @@ body::-webkit-scrollbar-thumb {
     margin: 10px 10px;
 }
 
-/* @media (min-width: 992px) {
-    .gallery_photo img {
-        width: 280px;
-        height: 180px;
-    }
-} */
+#w_photo {
+    width: 280px;
+    height: 300px;
+}
+
+
+.job_wrap {
+    overflow: hidden;
+}
+
+.job_wrap a {
+    display: block;
+}
+
+.job_wrap:hover a {
+    transition: transform 400ms ease-in-out;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 
 
 /* MAP/SOCIAL */
@@ -292,14 +308,14 @@ h4 {
 
 .instagram a:hover {
     background: #c4302b;
-    background: linear-gradient( to bottom left, rgb(221, 13, 134), rgb(249, 253, 0));
+    background: linear-gradient(to bottom left, rgb(221, 13, 134), rgb(249, 253, 0));
     color: #fff;
     transition: background 300ms ease-in-out;
 }
 
 .vk a:hover {
     background: #3b5998;
-    background: linear-gradient( to bottom left, #3b5998, rgb(142, 168, 255));
+    background: linear-gradient(to bottom left, #3b5998, rgb(142, 168, 255));
     color: #fff;
     transition: background 300ms ease-in-out;
 }
