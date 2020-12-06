@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .studio_name a {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 @media (max-width: 575.98px) {
@@ -84,7 +84,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .studio_name a:hover {
-    font-size: 41px;
     text-decoration: underline;
 }
 
