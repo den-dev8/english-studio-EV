@@ -5,6 +5,18 @@ body {
     background-image: url(../img/bgc.jpg);
 }
 
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #dc3545;
+}
+
 .container-fluid {
     margin-bottom: 15em;
 }
@@ -56,7 +68,6 @@ body {
         width: 160px;
     }
 }
-
 
 /* NAME STUDIO */
 
@@ -210,18 +221,26 @@ body {
     padding-bottom: 50px;
 }
 
+
+
 .gallery img {
     width: 360px;
     height: 240px;
     margin: 10px 10px;
 }
 
-@media (min-width: 992px) {
+.gallery_first img {
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+}
+
+/* @media (min-width: 992px) {
     .gallery_photo img {
         width: 280px;
         height: 180px;
     }
-}
+} */
 
 
 /* MAP/SOCIAL */
@@ -273,12 +292,14 @@ h4 {
 
 .instagram a:hover {
     background: #c4302b;
+    background: linear-gradient( to bottom left, rgb(221, 13, 134), rgb(249, 253, 0));
     color: #fff;
     transition: background 300ms ease-in-out;
 }
 
 .vk a:hover {
     background: #3b5998;
+    background: linear-gradient( to bottom left, #3b5998, rgb(142, 168, 255));
     color: #fff;
     transition: background 300ms ease-in-out;
 }
